@@ -2,7 +2,7 @@
 import pandas as pd
 import numpy as np
 from mlxtend.frequent_patterns import apriori,association_rules
-df = pd.read_csv('D:/Laptop backup 2/course work2/course works2/IUST/stat course/lectures/files/service5.csv')
+df = pd.read_csv('./service5.csv')
 df.describe(include="all").iloc[:,:3]
 np.sum(df.isna())
 D=df.dropna()
